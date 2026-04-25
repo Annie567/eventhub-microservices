@@ -1,0 +1,247 @@
+.participants-page {
+  background: linear-gradient(180deg, #08142f 0%, #071329 100%);
+  min-height: 100vh;
+  padding: 32px;
+  color: #e2e8f0;
+}
+
+.participants-header {
+  margin-bottom: 22px;
+}
+
+.participants-title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  color: #f8fafc;
+}
+
+.participants-subtitle {
+  color: #94a3b8;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.participants-message {
+  margin-bottom: 18px;
+  color: #7dd3fc;
+  font-weight: 500;
+}
+
+.participants-empty {
+  margin-top: 20px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.participant-card,
+.participants-admin-card {
+  background: rgba(30, 41, 59, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+  border-radius: 20px;
+}
+
+.participants-profile-card {
+  margin-bottom: 28px;
+  padding: 24px 24px 18px;
+}
+
+.participant-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.participant-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 4px;
+}
+
+.participants-edit-form {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.participants-form-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.participants-form-group {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+.participants-form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.participants-form-group input,
+.participants-form-group select {
+  height: 48px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(15, 23, 42, 0.82);
+  color: #f8fafc;
+  outline: none;
+  transition: all 0.2s ease;
+  font-size: 15px;
+}
+
+.participants-form-group input:focus,
+.participants-form-group select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.16);
+}
+
+.participants-form-group input:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.participants-action-btn,
+.participants-edit-btn,
+.participants-delete-btn,
+.participants-cancel-btn {
+  height: 34px;
+  padding: 0 12px;
+  min-width: 68px;
+  border: none;
+  border-radius: 999px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.participants-action-btn:hover,
+.participants-edit-btn:hover,
+.participants-delete-btn:hover,
+.participants-cancel-btn:hover {
+  transform: translateY(-1px);
+}
+
+.participants-action-btn {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.participants-edit-btn {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.participants-delete-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.participants-cancel-btn {
+  background: linear-gradient(135deg, #64748b, #475569);
+}
+
+.participants-admin-panel {
+  margin-bottom: 22px;
+}
+
+.participants-admin-card {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 150px;
+  padding: 16px 18px;
+}
+
+.participants-admin-label {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.participants-admin-value {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.participants-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.participant-card {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.participant-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+}
+
+.participant-detail {
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.participant-detail strong {
+  color: #f8fafc;
+}
+
+.participant-card-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 900px) {
+  .participants-page {
+    padding: 22px;
+  }
+
+  .participants-title {
+    font-size: 34px;
+  }
+
+  .participants-list {
+    grid-template-columns: 1fr;
+  }
+
+  .participant-card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .participants-page {
+    padding: 16px;
+  }
+
+  .participants-title {
+    font-size: 28px;
+  }
+
+  .participants-profile-card,
+  .participant-card {
+    padding: 18px;
+  }
+}

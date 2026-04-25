@@ -1,0 +1,143 @@
+.login-page {
+  height: 100vh;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  color: #e2e8f0;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.login-message {
+  background: #7f1d1d;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* 表单结构 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+/* 输入框 */
+.login-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: #0f172a;
+  color: white;
+  margin-bottom: 15px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.login-input:focus {
+  outline: none;
+  border: 1px solid #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3);
+}
+
+/* 按钮区域 */
+.login-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+/* 所有按钮统一 */
+.login-actions button {
+  flex: 1;
+  height: 44px; /* ✅ 强制统一高度 */
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Login 按钮 */
+.login-button {
+  border: 1px solid transparent; /* ✅ 关键修复对齐 */
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);
+}
+
+/* Viewer 按钮 */
+.viewer-button {
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #e2e8f0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.viewer-button:hover {
+  background: #1e293b;
+  transform: scale(1.03);
+  border-color: #38bdf8;
+}
+
+/* footer */
+.login-footer {
+  margin-top: 18px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.login-link {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}

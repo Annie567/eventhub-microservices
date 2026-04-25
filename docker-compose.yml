@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  django-backend:
+    build: ./backend-django/eventhub
+    ports:
+      - "8000:8000"
+    command: python manage.py runserver 0.0.0.0:8000
+
+  notification-service:
+    build: ./notification-service-node
+    ports:
+      - "5001:5001"
+    command: node server.js
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3001:3000"
+    command: npm start
+    depends_on:
+      - django-backend
+      - notification-service

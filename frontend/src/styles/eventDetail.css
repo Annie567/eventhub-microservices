@@ -1,0 +1,199 @@
+/* Page */
+.event-detail-page {
+  min-height: 100vh;
+  background: #0f172a;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card principale */
+.event-detail-card {
+  width: 100%;
+  max-width: 800px;
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  border-radius: 20px;
+  padding: 25px;
+  color: #e2e8f0;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Header */
+.event-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-detail-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Status badge */
+.event-detail-status {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-coming {
+  background: #facc15;
+  color: black;
+}
+
+.status-ongoing {
+  background: #22c55e;
+  color: black;
+}
+
+.status-finished {
+  background: #ef4444;
+}
+
+/* Message */
+.event-message {
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background: #334155;
+}
+
+/* Admin actions */
+.admin-actions-row {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.join {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
+
+.btn.leave {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+.btn.secondary {
+  background: #334155;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Danger */
+.danger-button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.small-button {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* Form */
+.edit-event-form {
+  margin-top: 20px;
+  padding: 15px;
+  background: #0f172a;
+  border-radius: 12px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+/* Action row */
+.event-action-row {
+  margin: 20px 0;
+}
+
+.disabled-text {
+  color: #94a3b8;
+}
+
+/* Infos */
+.event-info-grid {
+  margin-top: 15px;
+  display: grid;
+  gap: 10px;
+}
+
+/* Participants */
+.participants-section {
+  margin-top: 25px;
+}
+
+.participants-list {
+  margin-top: 10px;
+}
+
+.participant-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #334155;
+}
+
+.participant-name {
+  font-weight: 500;
+}
+
+/* Back */
+.back-row {
+  margin-top: 20px;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #38bdf8;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

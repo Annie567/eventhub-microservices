@@ -1,0 +1,56 @@
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e2e8f0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Sections */
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Links */
+.navbar-link {
+  text-decoration: none;
+  color: #cbd5f5;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar-link:hover {
+  color: #38bdf8;
+}
+
+/* User */
+.navbar-user {
+  font-weight: 600;
+}
+
+/* Separator */
+.navbar-separator {
+  color: #475569;
+}
+
+/* Logout */
+.navbar-logout {
+  background: #ef4444;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar-logout:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
