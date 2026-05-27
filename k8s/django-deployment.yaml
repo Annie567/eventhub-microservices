@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: django-backend
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: django-backend
+
+  template:
+    metadata:
+      labels:
+        app: django-backend
+
+    spec:
+      containers:
+      - name: django-backend
+        image: eventhub-django
+        ports:
+        - containerPort: 8000
