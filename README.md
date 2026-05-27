@@ -25,8 +25,8 @@ All services are containerized using Docker and orchestrated with docker-compose
 ## 🚀 Run the project (Docker)
 
 ```bash
-docker compose up --build ```
-
+docker compose up --build
+```
 ---
 
 ## ☸️ Kubernetes Configuration
