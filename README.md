@@ -18,6 +18,7 @@ All services are containerized using Docker and orchestrated with docker-compose
 - Backend (Django) → http://localhost:8000
 - Notification Service (Node.js) → http://localhost:5001/notifications
 - Frontend (React) → http://localhost:3001
+- Cloud Deployment → https://eventhub-frontend-5sdg.onrender.com
 
 ---
 
@@ -25,3 +26,12 @@ All services are containerized using Docker and orchestrated with docker-compose
 
 ```bash
 docker compose up --build
+
+---
+
+## ☸️ Kubernetes Configuration
+
+Kubernetes deployment and service configuration files are available in the k8s/ directory.
+
+```bash
+kubectl apply -f .
